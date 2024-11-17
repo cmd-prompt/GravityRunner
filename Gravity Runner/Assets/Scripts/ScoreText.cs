@@ -10,7 +10,7 @@ public class ScoreText : MonoBehaviour
     public Transform player;
     public float initialOffset = 0;
     
-    void Start()
+    void Awake()
     {
         initialOffset = player.transform.position.x;
         scoreText.text = "0";
