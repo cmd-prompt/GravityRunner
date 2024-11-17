@@ -11,7 +11,6 @@ using JetBrains.Annotations;
 public class PlayerDeath : MonoBehaviour
 {   
     public bool playerHasDied = false;
-    public TextMeshProUGUI scoreText;
     public Transform player;
     public float finalScore = 0f;
     public TextMeshProUGUI finalText;

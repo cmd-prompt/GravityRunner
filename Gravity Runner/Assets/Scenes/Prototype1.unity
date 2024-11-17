@@ -881,10 +881,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHasDied: 0
-  scoreText: {fileID: 0}
   player: {fileID: 753247138}
   finalScore: 0
-  finalText: {fileID: 0}
+  finalText: {fileID: 6011613241604307701}
   initialOffset: 0
 --- !u!1 &769153348
 GameObject:
@@ -2088,6 +2087,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59db64ac345c9c4daaf09e61fa70d8c, type: 3}
+--- !u!114 &6011613241604307701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7841772613771654135, guid: e59db64ac345c9c4daaf09e61fa70d8c, type: 3}
+  m_PrefabInstance: {fileID: 6011613241604307700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7226683097627961972
 PrefabInstance:
   m_ObjectHideFlags: 0
