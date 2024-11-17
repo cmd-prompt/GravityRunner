@@ -41,10 +41,10 @@ public class PlayerMovement : MonoBehaviour
     private void Jump() 
     {
         // Syarat: bikin floor dan ceilling di layer "Platform"
-        if (!myCharacterCollider2d.IsTouchingLayers(LayerMask.GetMask("Platform")))    
-        {
-            return;
-        }
+        // if (!myCharacterCollider2d.IsTouchingLayers(LayerMask.GetMask("Platform")))    
+        // {
+        //     return;
+        // }
         myBody.gravityScale *= -1;
         Vector3 temp = transform.localScale;
         temp.y *= -1;

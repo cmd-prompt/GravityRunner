@@ -1614,10 +1614,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 1056797220}
-  speed: 10
-  acceleration: 1
+  speed: 15
+  acceleration: 2
   acceleration_time: 2
-  kecepatan_Maks: 25
+  kecepatan_Maks: 40
 --- !u!50 &753247136
 Rigidbody2D:
   serializedVersion: 4
@@ -1644,7 +1644,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &753247137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1855,7 +1855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769153348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -17.95, y: 0, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2838,10 +2838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1d1e96ec36cfd44a1fcdf71dd8e53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  acceleration: 1
+  speed: 15
+  acceleration: 2
   acceleration_time: 2
-  kecepatan_Maks: 25
+  kecepatan_Maks: 40
 --- !u!1 &1242470500
 GameObject:
   m_ObjectHideFlags: 0
@@ -4315,12 +4315,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1234341143}
+  - {fileID: 753247138}
   - {fileID: 63765711}
   - {fileID: 701715597}
   - {fileID: 821494344}
   - {fileID: 393022618}
-  - {fileID: 1203732884}
-  - {fileID: 753247138}
   - {fileID: 24592294}
   - {fileID: 1056797221}
+  - {fileID: 1203732884}
   - {fileID: 769153350}
