@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Button jumpButton;
     private PolygonCollider2D myCharacterCollider2d;
 
+    public Canvas pauseScreen;
+
+
     [SerializeField] private float speed = 6f;
     [SerializeField] private float acceleration = 1f;
     [SerializeField] private float acceleration_time = 3f;    
@@ -17,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake() 
     {
         // Syarat: Nama tombol buat karakter loncat = Jump Button
-        jumpButton = GameObject.Find("Jump Button").GetComponent<Button>();             
+        jumpButton = GameObject.Find("Jump Button").GetComponent<Button>();
         jumpButton.onClick.AddListener (() => Jump ());
         myBody = GetComponent<Rigidbody2D>();
         myCharacterCollider2d = GetComponent<PolygonCollider2D>();
@@ -33,8 +36,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 temp = transform.position;
         temp.x += speed * Time.deltaTime;
         transform.position = temp;
-    }
 
+    }
     private void Jump() 
     {
         // Syarat: bikin floor dan ceilling di layer "Platform"
@@ -42,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-
         myBody.gravityScale *= -1;
         Vector3 temp = transform.localScale;
         temp.y *= -1;
