@@ -42,7 +42,6 @@ public class Collector : MonoBehaviour
         else if(target.tag == "OxygenTank")
         {
             target.gameObject.SetActive(false);
-            Debug.Log("P");
         }
     }
 }
