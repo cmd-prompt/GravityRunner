@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Obstacle
   - Collector
+  - OxygenTank
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - BG
   - Obstacle
   - Collector
-  - 
+  - OxygenTank
   - 
   - 
   - 
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Obstacle
     uniqueID: 2590208463
+    locked: 0
+  - name: OxygenTank
+    uniqueID: 3823735447
     locked: 0
   - name: Player
     uniqueID: 198098381

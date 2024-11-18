@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
@@ -11,11 +10,19 @@ using JetBrains.Annotations;
 public class PlayerDeath : MonoBehaviour
 {   
     public bool playerHasDied = false;
-    public TextMeshProUGUI scoreText;
+    [SerializeField] OxygenBar oxygenBar;
+    [SerializeField] float oxygenTankValue = 5f;
+    
+    [Header("Player Position")]
     public Transform player;
-    public float finalScore = 0f;
-    public TextMeshProUGUI finalText;
     public float initialOffset;
+
+    [Header ("Score Status")]
+    public float finalScore = 0f;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI finalText;
+
+
     void Awake()
     {
         finalText = GameObject.Find("Final Score Text").GetComponent<TextMeshProUGUI>();
@@ -30,13 +37,22 @@ public class PlayerDeath : MonoBehaviour
     {
         if(target.tag == "Obstacle")
         {
-            finalScore = player.transform.position.x - initialOffset;
-            finalText.text = "Final Score: " + finalScore.ToString("0");
-            // transform.position = new Vector3(0, 1000, 0);
-            GameObject.Find("Player").SetActive(false);
             target.gameObject.SetActive(false);
-            playerHasDied = true;
+            PlayerDied();
+        }
+        else if(target.tag == "OxygenTank")
+        {
+            target.gameObject.SetActive(false);
+            oxygenBar.oxygenValue += oxygenTankValue;
         }
     }
 
+    public void PlayerDied()
+    {
+        finalScore = player.transform.position.x - initialOffset;
+        finalText.text = "Final Score: " + finalScore.ToString("0");
+        // transform.position = new Vector3(0, 1000, 0);
+        GameObject.Find("Player").SetActive(false);
+        playerHasDied = true;      
+    }
 }
