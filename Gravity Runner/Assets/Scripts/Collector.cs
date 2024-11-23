@@ -19,10 +19,6 @@ public class Collector : MonoBehaviour
     {
         if(target.tag == "BG")
         {
-            Vector3 temp2 = target.transform.localScale;
-            temp2.x *= -1;
-            target.transform.localScale = temp2;
-
             Vector3 temp = target.transform.position;
             temp.x += width * 3;
             target.transform.position = temp;
