@@ -18,7 +18,8 @@ public class Collector : MonoBehaviour
     void OnTriggerEnter2D(Collider2D target)
     {
         if(target.tag == "BG")
-        {
+        {   
+            Debug.Log(width);
             Vector3 temp2 = target.transform.localScale;
             temp2.x *= -1;
             target.transform.localScale = temp2;
@@ -30,6 +31,7 @@ public class Collector : MonoBehaviour
 
         if(target.tag == "Platform")
         {
+            Debug.Log(width);
             Vector3 temp = target.transform.position;
             temp.x += width * 3;
             target.transform.position = temp;

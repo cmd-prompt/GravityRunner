@@ -33,6 +33,7 @@ public class PlayerDeath : MonoBehaviour
     {
 
     }
+    
     void OnTriggerEnter2D(Collider2D target)
     {
         if(target.tag == "Obstacle")
@@ -50,9 +51,10 @@ public class PlayerDeath : MonoBehaviour
     public void PlayerDied()
     {
         finalScore = player.transform.position.x - initialOffset;
-        finalText.text = "Final Score: " + finalScore.ToString("0");
+        finalText.text = finalScore.ToString("0");
         // transform.position = new Vector3(0, 1000, 0);
         GameObject.Find("Player").SetActive(false);
-        playerHasDied = true;      
+        playerHasDied = true; 
+        this.enabled = false;     
     }
 }

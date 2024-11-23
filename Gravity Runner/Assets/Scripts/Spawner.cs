@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {    
     [SerializeField] private GameObject[] items;
-    private float minY = -10.5f , maxY = 10.5f;
+    private float minY = -10.5f , maxY = 8f;
     [SerializeField] private int minTime = 1 , maxTime = 2;
     [SerializeField] private int waktu_awal_spawn;
 
