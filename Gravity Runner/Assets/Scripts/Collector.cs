@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class Collector : MonoBehaviour
 {
@@ -19,8 +20,7 @@ public class Collector : MonoBehaviour
     {
         if(target.tag == "BG")
         {   
-            Debug.Log(width);
-            Vector3 temp2 = target.transform.localScale;
+            Vector3 temp2 = target.transform.localScale ;
             temp2.x *= -1;
             target.transform.localScale = temp2;
 
@@ -31,7 +31,6 @@ public class Collector : MonoBehaviour
 
         if(target.tag == "Platform")
         {
-            Debug.Log(width);
             Vector3 temp = target.transform.position;
             temp.x += width * 3;
             target.transform.position = temp;
