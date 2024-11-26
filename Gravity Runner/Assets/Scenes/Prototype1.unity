@@ -778,7 +778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDeath: {fileID: 1931464876}
-  playerHasDied: 0
   jumpButton: {fileID: 856560421}
 --- !u!4 &769153350
 Transform:
@@ -791,7 +790,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -17.95, y: 0, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2093,9 +2092,7 @@ MonoBehaviour:
   oxygenBar: {fileID: 769153351}
   oxygenTankValue: 5
   player: {fileID: 1931464880}
-  initialOffset: 0
   finalScore: 0
-  scoreText: {fileID: 247352673}
   finalText: {fileID: 49851063}
 --- !u!114 &1931464877
 MonoBehaviour:
@@ -2793,6 +2790,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
       propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 3844422790738234233, guid: 0b3c731acaad05943b8616dc6da90013, type: 3}
+    - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 3844422790738234233, guid: 0b3c731acaad05943b8616dc6da90013, type: 3}
+    - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 3844422790738234233, guid: 0b3c731acaad05943b8616dc6da90013, type: 3}
+    - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: items.Array.data[4]
       value: 
       objectReference: {fileID: 3844422790738234233, guid: 0b3c731acaad05943b8616dc6da90013, type: 3}
     - target: {fileID: 6443708754521453043, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}

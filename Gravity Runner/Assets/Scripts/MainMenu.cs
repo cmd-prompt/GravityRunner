@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    Canvas settingsScreen;
+
+    void Awake()
+    {
+        settingsScreen = GameObject.Find("Settings Screen").GetComponent<Canvas>();
+        settingsScreen.gameObject.SetActive(false);
+    }
+
     public void StartGame() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -14,5 +22,15 @@ public class MainMenu : MonoBehaviour
     public void BackToMenu() 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void ToSettings()
+    {
+        settingsScreen.gameObject.SetActive(true);
+    }
+
+    public void QuitSettings()
+    {
+        settingsScreen.gameObject.SetActive(false);
     }
 }
