@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
 
     Canvas pauseScreen;
 
-    public bool playerHasDied;
-
     public Button jumpButton;
 
     void Awake()
