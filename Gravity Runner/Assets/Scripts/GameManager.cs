@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     Canvas endScreen;
     public PlayerDeath playerDeath;
 
+
     Canvas pauseScreen;
 
     public Button jumpButton;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
         endScreen = GameObject.Find("GameOver").GetComponent<Canvas>();
         pauseScreen = GameObject.Find("PauseScreen").GetComponent<Canvas>();
         playerDeath = GameObject.Find("Player").GetComponent<PlayerDeath>();
+        
         mainUI.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
         pauseScreen.gameObject.SetActive(false);
@@ -56,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             jumpButton.gameObject.SetActive(false);
         }
+
         
     }
 

@@ -30,8 +30,6 @@ public class PlayerDeath : MonoBehaviour
     void Start()
     { 
         initialOffsets = player.transform.position.x;
-        Debug.Log(initialOffsets);
-        finalText = GameObject.Find("Final Score Text").GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
@@ -57,8 +55,6 @@ public class PlayerDeath : MonoBehaviour
     {
         finalScore = player.transform.position.x;
         finalScore -= initialOffsets;
-        Debug.Log(initialOffsets);
-        Debug.Log(player.transform.position.x);
         finalText.text = finalScore.ToString("0");
         // transform.position = new Vector3(0, 1000, 0);
         GameObject.Find("Player").SetActive(false);
