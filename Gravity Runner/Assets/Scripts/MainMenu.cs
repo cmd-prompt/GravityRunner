@@ -6,22 +6,46 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    Canvas settingsScreen;
+    [SerializeField] Canvas settingsScreen;
+    string difficulty = "Normal";
 
     void Awake()
     {
-        settingsScreen = GameObject.Find("Settings Screen").GetComponent<Canvas>();
-        settingsScreen.gameObject.SetActive(false);
+        
     }
 
+    void Start()
+    {
+        settingsScreen.gameObject.SetActive(false);
+    }
     public void StartGame() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(difficulty);
+        Time.timeScale = 1;
     }
 
     public void BackToMenu() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("Starting Screen");
+        Time.timeScale = 1;
+    }
+
+    public void Easy()
+    {
+        difficulty = "Easy";
+        Debug.Log(difficulty);
+    }
+
+    public void Normal()
+    {
+        difficulty = "Normal";
+        Debug.Log(difficulty);
+    }
+
+    public void Hard()
+    {
+        difficulty = "Hard";
+        Debug.Log(difficulty);
     }
 
     public void ToSettings()

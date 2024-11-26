@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2406800180211878785}
   - component: {fileID: 4321580159578656910}
   m_Layer: 9
-  m_Name: Obstacle
+  m_Name: ObstacleNormal
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,4 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95560d2085903a546ae8a4564117891d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -5
+  speed: -8
