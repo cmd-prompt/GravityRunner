@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] Canvas settingsScreen;
+    [SerializeField] GameObject easyPNG;
+    [SerializeField] GameObject normalPNG;
+    [SerializeField] GameObject hardPNG;
     string difficulty = "Normal";
 
     void Awake()
@@ -33,19 +36,58 @@ public class MainMenu : MonoBehaviour
     public void Easy()
     {
         difficulty = "Easy";
-        Debug.Log(difficulty);
+        if (normalPNG.gameObject.activeInHierarchy)
+        {
+            normalPNG.gameObject.SetActive(false);
+        }
+
+        if (!easyPNG.gameObject.activeInHierarchy)
+        {
+            easyPNG.gameObject.SetActive(true);
+        }
+
+        if (hardPNG.gameObject.activeInHierarchy)
+        {
+            hardPNG.gameObject.SetActive(false);
+        }
     }
 
     public void Normal()
     {
         difficulty = "Normal";
-        Debug.Log(difficulty);
+        if (!normalPNG.gameObject.activeInHierarchy)
+        {
+            normalPNG.gameObject.SetActive(true);
+        }
+
+        if (easyPNG.gameObject.activeInHierarchy)
+        {
+            easyPNG.gameObject.SetActive(false);
+        }
+
+        if (hardPNG.gameObject.activeInHierarchy)
+        {
+            hardPNG.gameObject.SetActive(false);
+        }
     }
 
     public void Hard()
     {
         difficulty = "Hard";
-        Debug.Log(difficulty);
+        if (normalPNG.gameObject.activeInHierarchy)
+        {
+            normalPNG.gameObject.SetActive(false);
+        }
+
+        if (easyPNG.gameObject.activeInHierarchy)
+        {
+            easyPNG.gameObject.SetActive(false);
+        }
+
+        if (!hardPNG.gameObject.activeInHierarchy)
+        {
+            hardPNG.gameObject.SetActive(true);
+        }
     }
 
     public void ToSettings()
