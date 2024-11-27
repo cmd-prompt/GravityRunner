@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3948189650542923352}
   - component: {fileID: 5255941130455210954}
-  - component: {fileID: 2406800180211878785}
   - component: {fileID: 5971263374836759587}
+  - component: {fileID: 3361219247804629335}
+  - component: {fileID: 328225806350010892}
   m_Layer: 9
   m_Name: ObstacleHard
   m_TagString: Obstacle
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.4033, y: -9.3506, z: 0}
-  m_LocalScale: {x: -26.739254, y: 15.163769, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -1704758833
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4293e13a7b4a2cc468580195d393ff91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 127c1992a9dfcfb43821b0b947d08241, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,8 +87,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2406800180211878785
-PolygonCollider2D:
+--- !u!114 &5971263374836759587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067846640988675252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067a6841c96519848bb5c3d0f886b031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleSpeed: -8
+--- !u!95 &3361219247804629335
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067846640988675252}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a59126bdd353b7344a138e447d16e09f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &328225806350010892
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,39 +153,6 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.050795842, y: 0.030176448}
-      - {x: -0.08, y: 0.0059662955}
-      - {x: -0.08318341, y: -0.0131595675}
-      - {x: -0.0636546, y: -0.026247017}
-      - {x: -0.05124571, y: -0.034562994}
-      - {x: 0.009204227, y: -0.04456293}
-      - {x: 0.052837327, y: -0.043159567}
-      - {x: 0.07363331, y: -0.02719327}
-      - {x: 0.07442909, y: 0.01298318}
-      - {x: 0.047612466, y: 0.03736972}
-  m_UseDelaunayMesh: 0
---- !u!114 &5971263374836759587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7067846640988675252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 067a6841c96519848bb5c3d0f886b031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacleSpeed: -8
+  m_Offset: {x: 0, y: -0.1320262}
+  serializedVersion: 2
+  m_Radius: 2.502974

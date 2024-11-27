@@ -63,6 +63,19 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void PauseMechanism()
+    {
+        if (!pauseScreen.gameObject.activeInHierarchy) 
+        {
+            PauseGame();
+        }
+        else if (pauseScreen.gameObject.activeInHierarchy) 
+        {
+            if(!settingScreen.gameObject.activeInHierarchy)
+            ContinueGame();
+        }
+    }
+
     public void OnReplayLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
