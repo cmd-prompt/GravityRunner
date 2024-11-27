@@ -6,7 +6,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {    
     [SerializeField] private GameObject[] items;
-    [SerializeField] private float minY = -10.5f , maxY = 8f;
+    [SerializeField] private float minY = -8f , maxY = 8f;
     [SerializeField] private float minTime = 1.5f, maxTime = 2.5f;
     [SerializeField] private int stepAmount = 5;
     [SerializeField] private float stepSize;
@@ -32,6 +32,4 @@ public class Spawner : MonoBehaviour
         Instantiate (items[UnityEngine.Random.Range(0, items.Length)], temp, Quaternion.identity);
         StartCoroutine (SpawnItems(UnityEngine.Random.Range(minTime, maxTime)));
     }
-
- 
 }

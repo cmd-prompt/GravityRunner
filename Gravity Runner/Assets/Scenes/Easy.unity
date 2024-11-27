@@ -1754,7 +1754,7 @@ MonoBehaviour:
   - {fileID: 3844422790738234233, guid: 0b3c731acaad05943b8616dc6da90013, type: 3}
   - {fileID: 3844422790738234233, guid: d92561ca5ad644640b73e0546cc8a062, type: 3}
   - {fileID: 3844422790738234233, guid: 769dec3b67cb35e48b6dbe8d39455a15, type: 3}
-  minY: -9
+  minY: -8
   maxY: 8
   minTime: 3
   maxTime: 4
@@ -2428,10 +2428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 1056797220}
-  speed: 15
-  acceleration: 2
-  acceleration_time: 2
-  kecepatan_Maks: 40
+  speed: 5
+  acceleration: 1
+  acceleration_time: 1
+  kecepatan_Maks: 10
 --- !u!50 &1931464878
 Rigidbody2D:
   serializedVersion: 4
@@ -2785,6 +2785,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 062322b50b84bcb4793a9131a29bacf5, type: 3}
+    - target: {fileID: 2673511381030317020, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2673511381030317020, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3360,6 +3364,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1737332956374142303, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: minY
+      value: -8
+      objectReference: {fileID: 0}
     - target: {fileID: 4910038842916381694, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
       propertyPath: maxTime
       value: 2
@@ -3430,15 +3442,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432501642677528987, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
       propertyPath: speed
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8432501642677528987, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
       propertyPath: acceleration
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8432501642677528987, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
       propertyPath: kecepatan_Maks
-      value: 40
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432501642677528987, guid: 22bc6570662892b429d12b7afe6e3b1a, type: 3}
+      propertyPath: acceleration_time
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
