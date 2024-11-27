@@ -39,7 +39,6 @@ public class OxygenBar : MonoBehaviour
             fillFraction = 0;
             player.PlayerDied();
             this.enabled = false;
-            Debug.Log ("rawr");
         }
 
         timerImage.fillAmount = fillFraction;

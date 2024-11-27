@@ -1075,6 +1075,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsScreen: {fileID: 2085462016}
+  easyPNG: {fileID: 0}
+  normalPNG: {fileID: 0}
+  hardPNG: {fileID: 0}
 --- !u!1 &856560419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2781,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 830367271524138869, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
@@ -2893,6 +2904,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1234341142}
+    - target: {fileID: 8896949012549081701, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8896949012549081701, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

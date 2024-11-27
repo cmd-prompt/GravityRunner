@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oxygenMeter: 8
-  timerImage: {fileID: 0}
+  timerImage: {fileID: 1828733178}
   fillFraction: 1
   oxygenValue: 0
   player: {fileID: 1931464876}
@@ -916,6 +916,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsScreen: {fileID: 2085462016}
+  easyPNG: {fileID: 0}
+  normalPNG: {fileID: 0}
+  hardPNG: {fileID: 0}
 --- !u!1 &856560419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2104,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2486849184295667608, guid: 89f3518b3d5ad9a44b64d74cfd6f1da5, type: 3}
   m_PrefabInstance: {fileID: 1828733176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1828733178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5003630692010153582, guid: 89f3518b3d5ad9a44b64d74cfd6f1da5, type: 3}
+  m_PrefabInstance: {fileID: 1828733176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1877861635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2767,7 +2781,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 392735703959593618, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 830367271524138869, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
@@ -2882,6 +2904,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1234341142}
+    - target: {fileID: 8896949012549081701, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8896949012549081701, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
