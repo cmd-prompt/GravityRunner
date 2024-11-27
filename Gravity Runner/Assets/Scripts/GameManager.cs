@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour
     Canvas endScreen;
     public PlayerDeath playerDeath;
 
-
     Canvas pauseScreen;
 
     public Button jumpButton;
+    [SerializeField] Canvas settingScreen;
 
     void Awake()
     {
@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
                 }
                 else if (pauseScreen.gameObject.activeInHierarchy) 
                 {
+                    if(!settingScreen.gameObject.activeInHierarchy)
                     ContinueGame();
                 }
             } 

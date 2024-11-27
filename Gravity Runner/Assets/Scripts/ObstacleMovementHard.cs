@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleScript : MonoBehaviour
+public class ObstacleMovementHard : MonoBehaviour
 {
-    [SerializeField] private float speed = -5f;
+    [SerializeField] public float obstacleSpeed = -8f;
+
+    
     void Start()
     {
         
@@ -14,7 +16,7 @@ public class ObstacleScript : MonoBehaviour
     void Update()
     {
         Vector3 temp = transform.position;
-        temp.x += speed * Time.deltaTime;
+        temp.x += obstacleSpeed * Time.deltaTime;
         transform.position = temp;
     }
 }
