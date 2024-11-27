@@ -9,6 +9,8 @@ using JetBrains.Annotations;
 
 public class PlayerDeath : MonoBehaviour
 {   
+    AudioPlayer audioPlayer;
+
     public bool playerHasDied = false;
     [SerializeField] OxygenBar oxygenBar;
     [SerializeField] float oxygenTankValue = 5f;
@@ -24,7 +26,7 @@ public class PlayerDeath : MonoBehaviour
 
     void Awake()
     {
-        
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void Start()
@@ -48,6 +50,7 @@ public class PlayerDeath : MonoBehaviour
         {
             target.gameObject.SetActive(false);
             oxygenBar.oxygenValue += oxygenTankValue;
+            audioPlayer.PlayOxygenClip();
         }
     }
 
@@ -58,6 +61,7 @@ public class PlayerDeath : MonoBehaviour
         finalText.text = finalScore.ToString("0");
         // transform.position = new Vector3(0, 1000, 0);
         GameObject.Find("Player").SetActive(false);
+        audioPlayer.PlayDeathClip();
         playerHasDied = true; 
         this.enabled = false;
         oxygenBar.enabled = false;     

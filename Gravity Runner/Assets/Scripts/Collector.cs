@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class Collector : MonoBehaviour
 {
     private float width = 0f;
+    
 
     // Start is called before the first frame update
     void Awake()

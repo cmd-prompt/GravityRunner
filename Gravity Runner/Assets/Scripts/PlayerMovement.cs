@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Canvas pauseScreen;
 
+    AudioPlayer audioPlayer;
+
     [SerializeField] private float speed = 6f;
     [SerializeField] private float acceleration = 1f;
     [SerializeField] private float acceleration_time = 3f;    
@@ -23,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         jumpButton.onClick.AddListener (() => Jump ());
         myBody = GetComponent<Rigidbody2D>();
         myCharacterCollider2d = GetComponent<PolygonCollider2D>();
-
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void Start() 
@@ -85,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
             temp2.y = 10;
         }
 
+        audioPlayer.PlayJumpClip();
         myBody.velocity = temp2;
     }
 

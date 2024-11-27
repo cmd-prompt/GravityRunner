@@ -602,7 +602,7 @@ SpriteRenderer:
   m_SortingLayerID: 904955651
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31100410d52e8474d966372361997b43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f73dda8adc4edb8418aabbd96ecce22b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -649,7 +649,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0134, y: 0.0402}
-  m_SizeDelta: {x: 253.5077, y: 120.7344}
+  m_SizeDelta: {x: 282.5479, y: 108.8542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415416998
 MonoBehaviour:
@@ -1317,8 +1317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0134, y: 0.0402}
-  m_SizeDelta: {x: 253.5077, y: 120.7344}
+  m_AnchoredPosition: {x: -0.0134, y: 0.0344}
+  m_SizeDelta: {x: 281.5092, y: 114.2008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1060713833
 MonoBehaviour:
@@ -1499,7 +1499,7 @@ SpriteRenderer:
   m_SortingLayerID: 904955651
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31100410d52e8474d966372361997b43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b4973db9c4290f4b975d03886310b93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1704,7 +1704,7 @@ SpriteRenderer:
   m_SortingLayerID: 904955651
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31100410d52e8474d966372361997b43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10eebd06bba9d734eab03c99e95dddd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1750,8 +1750,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0134, y: 0.0402}
-  m_SizeDelta: {x: 253.5077, y: 120.7344}
+  m_AnchoredPosition: {x: -0.0217, y: 0.0485}
+  m_SizeDelta: {x: 281.4667, y: 122.0658}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252891540
 MonoBehaviour:
@@ -2024,8 +2024,8 @@ Transform:
   m_GameObject: {fileID: 1769292149}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.98, y: 55.03, z: 0}
-  m_LocalScale: {x: 59.507996, y: 78.498, z: 45}
+  m_LocalPosition: {x: -26, y: 54, z: 0}
+  m_LocalScale: {x: 88.5696, y: 102.7854, z: 45}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 689885645}
@@ -2100,7 +2100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5572356307969738759, guid: e59db64ac345c9c4daaf09e61fa70d8c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7345379272037719447, guid: e59db64ac345c9c4daaf09e61fa70d8c, type: 3}
       propertyPath: m_Pivot.x
@@ -2260,6 +2260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 342698268765864451, guid: e9b8049e4ac22594fb314acacbfd4c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2361272412244353813, guid: e9b8049e4ac22594fb314acacbfd4c36, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2321,6 +2325,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 830367271524138869, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 062322b50b84bcb4793a9131a29bacf5, type: 3}
     - target: {fileID: 2673511381030317020, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2332,6 +2340,10 @@ PrefabInstance:
     - target: {fileID: 4259453154200392475, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_Name
       value: Settings Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259453154200392475, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5726724812004295095, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_Pivot.x
@@ -2417,6 +2429,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1757452635}
+    - target: {fileID: 8429387935556033741, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542079786550358371, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 8896949012549081701, guid: d5c0cb743ab96a3479363ae57b50d032, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
